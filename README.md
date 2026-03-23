@@ -1,67 +1,52 @@
-HR Resume Matcher & GenAI Feedback Generator
+# 📄 HR Resume Matcher & GenAI Feedback Generator
 
-[Streamlit App](https://static.streamlit.io/badges/featured.svg)](https://your-streamlit-link.streamlit.app)
-[FastAPI Backend](https://img.shields.io/badge/FastAPI-Backend-blue)](http://127.0.0.1:8000/docs)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-streamlit-link.streamlit.app)
+[![FastAPI Backend](https://img.shields.io/badge/FastAPI-Backend-blue.svg)](http://127.0.0.1:8000/docs)
 
-Features
-- **📊 ML Matching**: TF-IDF cosine similarity (resume vs JD)
-- **🤖 GenAI Feedback**: Gemini extracts **matching skills**, **skills to improve**, **job fit (Yes/No)**, **HR email**
-- **📤 File Upload**: PDF/DOCX resumes + JDs
-- **✨ Live Demo**: [Try it](https://your-streamlit-link.streamlit.app)
+An open-source HR Tech portfolio project that combines Machine Learning and Generative AI to evaluate resumes against job descriptions. It provides ATS matching scores and actionable AI-driven feedback to help candidates optimize their applications.
 
-Screenshots
-**Dashboard**  
-![Dashboard](screenshots/dashboard.png)
+**[✨ Live Demo](https://your-streamlit-link.streamlit.app)** | **[🐙 GitHub Repo](https://github.com/viveksalimath/your-repo-name)**
 
-**Results** (Score + Skills + Email)  
-![Results](screenshots/results.png)
+---
 
-**API Docs**  
-![API](screenshots/api.png)
+## ✨ Features
 
-##  Structure
-```
+- **📊 ML Matching:** Calculates TF-IDF cosine similarity between the resume and the Job Description (JD).
+- **🤖 GenAI Feedback:** Leverages Google Gemini 2.0 Flash to extract matching skills, identify missing skills, determine overall job fit (Yes/No), and draft an HR email.
+- **📤 Multi-Format Uploads:** Supports parsing for both PDF and DOCX resume formats.
+- **⚡ Interactive UI & API:** Built with a Streamlit frontend and a FastAPI backend.
+
+---
+
+## 📸 Screenshots
+
+| Dashboard | Results (Score + Skills + Email) | API Docs |
+| :---: | :---: | :---: |
+| ![Dashboard](screenshots/dashboard.png) | ![Results](screenshots/results.png) | ![API](screenshots/api.png) |
+
+---
+
+## 🎖️ Tech Stack
+
+- **Machine Learning:** `scikit-learn` (TF-IDF, Cosine Similarity)
+- **Generative AI:** Google Gemini 2.0 Flash
+- **Backend:** FastAPI, Uvicorn
+- **Frontend:** Streamlit
+- **Document Parsing:** `PyPDF2`, `python-docx`
+
+---
+
+## 📂 Project Structure
+
+```text
 HR Tech Resume Matcher & GenAI Feedback/
 ├── hr_resume_matcher/
 │   ├── core.py          # TF-IDF + Gemini logic
 │   ├── backend.py       # FastAPI /evaluate_candidate
 │   ├── frontend.py      # Streamlit UI + uploads
-│   ├── .env             # GEMINI_API_KEY
+│   ├── .env             # GEMINI_API_KEY (Not tracked)
 │   └── .gitignore
+├── screenshots/         # UI and API images
 ├── requirements.txt     # Dependencies
 ├── README.md
 └── TODO.md
-```
-
-##  Quick Start (Local)
-```bash
-pip install -r requirements.txt
-cd hr_resume_matcher
-uvicorn backend:app --reload  # http://127.0.0.1:8000/docs
-streamlit run frontend.py     # http://localhost:8502
-```
-
-**Add your GEMINI_API_KEY to .env**
-
-## ☁️ Deploy (Streamlit Cloud)
-1. Push to GitHub
-2. [Streamlit Cloud](https://share.streamlit.io) → New app → `frontend.py`
-3. Backend: Render.com (Docker)
-
-## 📦 Dependencies
-```
-fastapi uvicorn streamlit scikit-learn google-generativeai python-dotenv PyPDF2 python-docx python-multipart
-```
-
-## 🎖️ Tech Stack
-- **ML**: scikit-learn (TF-IDF)
-- **AI**: Google Gemini 2.0 Flash
-- **Backend**: FastAPI
-- **Frontend**: Streamlit
-- **Files**: PyPDF2, docx
-
-**Live Demo**: [Demo Link](https://your-streamlit-link.streamlit.app)  
-**Repo**: [GitHub](https://github.com/viveksalimath)
-
-**📈 Portfolio Project** – Open Source HR Tech!
-
