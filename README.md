@@ -18,14 +18,6 @@ An open-source HR Tech portfolio project that combines Machine Learning and Gene
 
 ---
 
-## 📸 Screenshots
-
-| Streamlit Dashboard | FastAPI Docs |
-| :---: | :---: |
-| ![Dashboard](screenshots/dashboard.jpg) | ![API Docs](screenshots/api_docs.jpg) |
-
----
-
 ## 📂 Project Structure
 
 ```text
