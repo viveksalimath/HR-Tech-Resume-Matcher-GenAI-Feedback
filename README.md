@@ -20,19 +20,9 @@ An open-source HR Tech portfolio project that combines Machine Learning and Gene
 
 ## 📸 Screenshots
 
-| Dashboard | Results (Score + Skills + Email) | API Docs |
-| :---: | :---: | :---: |
-| ![Dashboard](screenshots/dashboard.png) | ![Results](screenshots/results.png) | ![API](screenshots/api.png) |
-
----
-
-## 🎖️ Tech Stack
-
-- **Machine Learning:** `scikit-learn` (TF-IDF, Cosine Similarity)
-- **Generative AI:** Google Gemini 2.0 Flash
-- **Backend:** FastAPI, Uvicorn
-- **Frontend:** Streamlit
-- **Document Parsing:** `PyPDF2`, `python-docx`
+| Streamlit Dashboard | FastAPI Docs |
+| :---: | :---: |
+| ![Dashboard](screenshots/dashboard.jpg) | ![API Docs](screenshots/api_docs.jpg) |
 
 ---
 
@@ -44,9 +34,8 @@ HR Tech Resume Matcher & GenAI Feedback/
 │   ├── core.py          # TF-IDF + Gemini logic
 │   ├── backend.py       # FastAPI /evaluate_candidate
 │   ├── frontend.py      # Streamlit UI + uploads
-│   ├── .env             # GEMINI_API_KEY (Not tracked)
+│   ├── .env             # GEMINI_API_KEY
 │   └── .gitignore
-├── screenshots/         # UI and API images
 ├── requirements.txt     # Dependencies
 ├── README.md
 └── TODO.md
