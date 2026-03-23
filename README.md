@@ -1,15 +1,15 @@
-# 🚀 HR Resume Matcher & GenAI Feedback Generator
+  HR Resume Matcher & GenAI Feedback Generator
 
 [![Streamlit App](https://static.streamlit.io/badges/featured.svg)](https://your-streamlit-link.streamlit.app)
 [![FastAPI Backend](https://img.shields.io/badge/FastAPI-Backend-blue)](http://127.0.0.1:8000/docs)
 
-## 🎯 Features
+  Features
 - **📊 ML Matching**: TF-IDF cosine similarity (resume vs JD)
 - **🤖 GenAI Feedback**: Gemini extracts **matching skills**, **skills to improve**, **job fit (Yes/No)**, **HR email**
 - **📤 File Upload**: PDF/DOCX resumes + JDs
 - **✨ Live Demo**: [Try it](https://your-streamlit-link.streamlit.app)
 
-## 📸 Screenshots
+##  Screenshots
 **Dashboard**  
 ![Dashboard](screenshots/dashboard.png)
 
@@ -19,7 +19,7 @@
 **API Docs**  
 ![API](screenshots/api.png)
 
-## 🗂️ Structure
+##  Structure
 ```
 HR Tech Resume Matcher & GenAI Feedback/
 ├── hr_resume_matcher/
@@ -33,7 +33,7 @@ HR Tech Resume Matcher & GenAI Feedback/
 └── TODO.md
 ```
 
-## 🚀 Quick Start (Local)
+##  Quick Start (Local)
 ```bash
 pip install -r requirements.txt
 cd hr_resume_matcher
